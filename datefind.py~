@@ -1,0 +1,8 @@
+import re
+
+month1 = open("months.csv",'r').read()
+months = month1.split("\r")
+print months
+
+def vali_date(d):
+    matches = re.search(
