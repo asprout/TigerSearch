@@ -19,7 +19,7 @@ def getNames(txt):
         found.append(z)
     
     #tallies up all names
-    nameCount = {w:found.count(w) for w in found}
+    nameCount = {found.count(w):w for w in found}
 
     return nameCount
 
