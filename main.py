@@ -5,7 +5,9 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 @app.route('/')
-def check():
+@app.route('/home')
+@app.route('/index')
+def home():
     input = request.args.get('question',None)
     if input == None:
         return render_template("TigerSearch.html",list=[])
@@ -22,6 +24,5 @@ def whoAnswer(question,n): #returns top n occurrences of names from question
     return getNames(txt,n)
 
 if __name__ == "__main__":
-    app.run(debug = "True")
-
-    
+    app.debug=True
+    app.run(port=5005) #port 5000 is too common, might be taken already
