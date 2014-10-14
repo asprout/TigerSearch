@@ -9,17 +9,22 @@
   <body> 
     <h1 align = "center"> TigerSearch</h1>
     <h1 align = "center"> CK, JK, LD, AL </h1>
-    <form method="get" action="http://www.google.com"> 
+    <form method="get"> 
 <table cellpadding="0px" cellspacing="0px"> 
 <tr> 
+<td>Who&nbsp</td>
 <td style="border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;">
-<input type="text" name="zoom_query" style="width:100px; border:0px solid; height:17px; padding:0px 3px; position:relative;"> 
+<input type="text" name="question" style="width:100px; border:0px solid; height:17px; padding:0px 3px; position:relative;"> 
 </td>
 <td style="border-style:solid;border-color:#4B7B9F;border-width:1px;"> 
-<input type="submit" value="" style="border-style: none; background: 'tiger.gif' no-repeat; width: 24px; height: 20px;">
+<input type="submit" name="enter" value="Ask" style="border-style: none; background: 'tiger.gif' no-repeat; width: 30px; height: 20px;">
 </td>
 </tr>
 </table>
 </form>
+<br>
+{% for e in list %}
+<br>{{e[0] + " : " + e[1]}}
+{% endfor %}
   </body> 
 </html>
