@@ -26,8 +26,8 @@ def getNames(txt, num):
     
     #tallies up all names
     nameCount = {w:found.count(w) for w in found}
-    nameCount = [(w,nameCount[w]) for w in nameCount.keys()]
-    nameCount.sort(key = lambda x: x[1],reverse = True)
+    nameCount = [(w,str(nameCount[w])) for w in nameCount.keys()]
+    nameCount.sort(key = lambda x: int(x[1]),reverse = True)
 
     return nameCount[:num]
 
