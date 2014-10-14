@@ -9,7 +9,7 @@
   <body> 
     <h1 align = "center"> TigerSearch</h1>
     <h1 align = "center"> CK, JK, LD, AL </h1>
-    <form method="get" action="http://www.google.com"> 
+    <form method="get" action="http://www.google.com/search.php"> 
 <table cellpadding="0px" cellspacing="0px"> 
 <tr> 
 <td style="border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;">
