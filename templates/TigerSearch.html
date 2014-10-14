@@ -3,6 +3,7 @@
 <head>
 <style>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <link rel="shortcut icon" type="image/jpg" href="http://oi62.tinypic.com/28hj6gl.jpg"/>
 body {
   text-align: center;
   font-family: Monaco, Consolas, "Lucida Console", monospace;
@@ -13,18 +14,33 @@ table.center {
   margin-right: auto;
 }
 
+table {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
 h1 {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   font-size: 150px;
   color: orange;
+  text-align: center;
 }
 
+h2 {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+}
 </style>
   <title>TigerSearch</title>
 </head>
 <body> 
-  <h1 align = "center"> TigerSearch</h1>
-  <h2 align = "center"> CK, JK, LD, AL </h1>
+  <h1>TigerSearch</h1>
+  <h2> CK, JK, LD, AL </h1>
   <form method="get"> 
 <table cellpadding="0px" cellspacing="0px" align="center"> 
   <tr> 
@@ -39,9 +55,15 @@ h1 {
 </table>
 </form>
 <br>
+
+<table align="center">
+<tr><td><b><h3>Survey Says...</h3></b></td></tr>
 {% for e in list %}
-<br>{{e[0] + " : " + e[1]}}
+<tr><td>
+{{e[0] + " : "}}</td><td>
+{{e[1]}}
 {% endfor %}
+</td></tr></table>
 
 </body> 
 </html>
